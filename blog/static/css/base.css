@@ -1,0 +1,49 @@
+body {padding-left: 20px;}
+
+.title, .title:hover, .title:visited, .title:active {color: white;}
+
+h1, h2, h3, h4 {
+        font-family: 'Impact';
+        }
+
+.header-main {
+        color: white;
+        background-color: DarkRed;
+        padding: 20px 20px 20px 40px;
+        margin-top: 0;
+      }
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+                color: #ffffff;
+                float: right;
+                font-size: 26pt;
+                margin-right: 20px;
+            }
+
+.post h2, .post h2 a, .post h2 a:visited, .post h2 a:active {
+        font-size: 20pt;
+        text-align: left;
+    }
+
+.post {
+        padding-left: 40px;
+        display: inline-block;
+      }
+
+.post div {display: inline-block;}
+
+.create textarea, .create input {
+        width: 100%;
+      }
+
+.date {
+        color: #828282;
+        font-size: 12pt;
+      }
+
+.top-menu {
+          color: #ffffff;
+          float: right;
+          font-size: 26pt;
+          margin-right: 20px;
+      }

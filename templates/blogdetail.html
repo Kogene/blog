@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class = post-extra>
+
+        {% if user.is_authenticated %}
+            <div class = 'buttons'>
+                <a href = '{% url "edit" id=instance.id %}' class="btn btn-default"><span class = "glyphicon glyphicon-pencil"></span></a>
+                <a href = '{% url "delete" id=instance.id %}' class="btn btn-default"><span class = "glyphicon glyphicon-trash"></span></a>
+            </div>
+        {% endif %}
+
+        <h1> "{{ title }}"</h1>
+
+        <div class = date>
+          {{ instance.tpublish }}
+        </div>
+
+        <p> {{ instance.content|linebreaksbr }} </p>
+
+    </div>
+{% endblock content %}

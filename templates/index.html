@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for i in list_of_objects %}
+        <div class = post >
+          <h2> <a href = '{% url "detail" id=i.id %}'> {{ i.title }} </a> </h2>
+          {{ i.tpublish }}
+        </div>
+    {% endfor %}
+
+{% endblock content %}
